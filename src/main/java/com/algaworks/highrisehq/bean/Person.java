@@ -79,6 +79,10 @@ public class Person implements Serializable {
 		this.contactData = contactData;
 	}
 
+        /**
+         * 
+         * @return an initialized {@link SubjectData} object
+         */
         @XmlElement(name="subject_datas")        
         public SubjectDatas getSubjectDatas() {
             return subjectDatas;

@@ -37,6 +37,10 @@ public class SubjectDatas {
         this.type = type;
     }
 
+    /**
+     * removes a Custom Field from HighRise
+     * @param subjectData 
+     */
     public void removeData(SubjectData subjectData) {
         for (Iterator<SubjectData> it = datas.iterator(); it.hasNext();) {
             SubjectData sd = it.next();

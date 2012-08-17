@@ -156,6 +156,7 @@ public abstract class HighriseManager {
 		return webResource.path(path)
 				.queryParams(params)
 				.accept(MediaType.APPLICATION_XML)
+                                .type(MediaType.APPLICATION_XML)
 				.header("Authorization", authorization);
 	}
 	
