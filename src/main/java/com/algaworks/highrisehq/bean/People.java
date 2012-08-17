@@ -1,6 +1,7 @@
 package com.algaworks.highrisehq.bean;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -11,7 +12,7 @@ public class People implements Serializable, ListWrapper<Person>{
 
 	private static final long serialVersionUID = 1L;
 	
-	private List<Person> people;
+	private List<Person> people = new ArrayList<Person>();
 	
 	@XmlElement(name="person")
 	public List<Person> getObjects() {
